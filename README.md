@@ -28,3 +28,7 @@ Poi apri http://localhost:4173
 ## Backup
 
 Prima di ogni modifica a un file esistente di questo progetto viene creata una copia con timestamp (`nomefile.YYYYMMDDHHMMSS.bak.ext`) nella stessa cartella.
+
+## Privacy
+
+Le tue posizioni reali vivono solo in `data/portfolio.db` (SQLite locale), creato al primo avvio e **mai versionato** (è in `.gitignore`). Chi clona questo repo parte con un portafoglio vuoto: nessun dato personale, nessuna scelta di investimento è nel codice o nella cronologia git. Anche i backup con timestamp (`*.bak.*`) restano solo in locale.

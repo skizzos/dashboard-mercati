@@ -12,6 +12,11 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skizzos/dashboard-mercati.git"
+  },
   "dependencies": {
     "better-sqlite3": "^13.0.3",
     "d3": "^7.9.0",
