@@ -1,0 +1,22 @@
+{
+  "name": "dashboard-mercati",
+  "version": "1.0.0",
+  "description": "Cruscotto personale portafoglio azionario",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "d3": "^7.9.0",
+    "express": "^5.2.1",
+    "gridstack": "^13.2.0",
+    "yahoo-finance2": "^4.0.2"
+  }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terminal Portafoglio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/vendor/gridstack/gridstack.min.css">
+<link rel="stylesheet" href="/styles.css">
+<script src="/vendor/d3/d3.min.js"></script>
+<script src="/vendor/gridstack/gridstack-all.js"></script>
+</head>
+<body>
+
+<div class="tape-row" id="tape"></div>
+
+<div class="topbar">
+  <div class="brand" id="brandTitle">CRUSCOTTO <span>::</span> PORTAFOGLIO</div>
+  <div class="spacer"></div>
+  <div class="warning" id="warningLine" hidden></div>
+  <div class="clock" id="clock">--:--:--</div>
+  <button class="widget-btn" id="refreshBtn" type="button">⟳ AGGIORNA</button>
+  <button class="widget-btn" id="editBtn" type="button" aria-pressed="false">✎ MODIFICA LAYOUT</button>
+  <button class="widget-btn" id="widgetBtn" type="button" aria-haspopup="true" aria-expanded="false" disabled>+ WIDGET</button>
+  <button class="widget-btn" id="titleBtn" type="button">✎ TITOLO</button>
+  <div class="widget-menu" id="widgetMenu" hidden>
+    <div class="widget-menu-head">Pannelli visibili</div>
+    <div id="widgetMenuList"></div>
+  </div>
+</div>
+
+<div class="stat-strip" id="statStrip"></div>
+
+<div class="grid-stack" id="dashboardGrid"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
